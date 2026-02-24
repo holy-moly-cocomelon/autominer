@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "autominer",
+  "version": "${version}",
+  "name": "Auto Miner",
+  "description": "Automatically mines trees or ores.",
+  "authors": [
+    "CR1M1N4L_V1N"
+  ],
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.autominer.addon.AutoMinerAddon"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "50,200,50",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}
